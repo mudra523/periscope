@@ -1,0 +1,22 @@
+.title{
+  font-size: 1.7em;
+  line-height: 1em;
+  font-weight: 700;
+  font-family: 'Nunito';
+  margin-bottom: 1.2em;
+  padding-inline: 10%;
+}
+
+.input {
+  font-size: 1.5em;
+  padding: 0;
+  height: 2.2em;
+  text-align: center;
+  margin-bottom: 0.8em;
+  font-family: 'Nunito';
+  font-weight: 600;
+}
+
+.buttonWrapper {
+  height: 3.3em;
+}

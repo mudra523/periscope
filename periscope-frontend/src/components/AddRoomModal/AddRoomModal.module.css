@@ -1,0 +1,74 @@
+.modalMask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeButton {
+  position: relative;
+  align-self: flex-end;
+  right: 6px;
+  top: 11px;
+  background: none;
+}
+
+.modalHeader {
+  padding-bottom: 30px;
+}
+
+.heading {
+  margin-bottom: 5px;
+  display: inline;
+}
+
+.subHeading {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.roomTypes {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.typeBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 10px;
+  padding-inline: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.typeBox.active {
+  background: var(--primary-mid);
+}
+
+.typeBox>img{
+  height: 3em;
+}
+
+/* New Classes */
+.input {
+  font-size: 1.5em;
+  padding: 0;
+  height: 2.2em;
+  text-align: center;
+  margin-bottom: 0.8em;
+  font-family: 'Nunito';
+  font-weight: 600;
+}
+
+.buttonWrapper {
+  height: 3.3em;
+}

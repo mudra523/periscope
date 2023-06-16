@@ -1,0 +1,8 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 28em;
+  min-height: 17em;
+  padding: 2em;
+}

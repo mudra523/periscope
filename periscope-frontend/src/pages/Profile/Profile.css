@@ -1,0 +1,20 @@
+.custom_radio{
+  display: flex !important;
+  flex-direction: row !important;
+  border-radius: 8px !important;
+  width: auto !important;
+}
+
+.active_radio {
+  padding: 5px 10px !important;
+  background-color: var(--primary-mid) !important;
+  border-radius: 8px !important;
+  width: auto !important;
+}
+
+.inactive_radio {
+  padding: 5px 10px !important;
+  background-color: var(--primary) !important;
+  border-radius: 8px !important;
+  width: auto !important;
+}

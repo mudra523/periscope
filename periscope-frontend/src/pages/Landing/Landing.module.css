@@ -1,0 +1,39 @@
+.imageWrap{
+  object-fit: cover;
+  width: 20em;
+  margin-bottom: 3.3em;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.contentWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Nunito';
+  font-style: normal;
+}
+
+.contentWrapper > div {
+  margin-bottom: 1.2em;
+}
+
+.contentWrapper > div > h1 {
+  line-height: 1.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.contentWrapper > div > p {
+  line-height: 1.3em;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.buttonWrapper{
+  width: 25em;
+  height: 4em;
+}

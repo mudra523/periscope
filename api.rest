@@ -1,0 +1,84 @@
+//All room related calls
+POST http://localhost:5500/api/rooms HTTP/1.1
+Content-Type: application/json
+
+{
+  "topic": "Test Room 3",
+  "roomType": "private",
+  "tags": ["longtag1", "longtag2", "longtag3", "longtag4", "longtag5"],
+  "ids": ["6375429c3ac4f02d5c9e300a", "6378bcef200cb1362837c1a6","6378bb3c8aeeee7228d81fee", "6378bdb1200cb1362837c1ab"]
+}
+
+###
+GET http://localhost:5500/api/rooms HTTP/1.1
+Content-Type: application/json
+
+###
+GET  http://localhost:5500/api/room/637a10f2cde01ebc18b394b6 HTTP/1.1
+Content-Type: application/json
+
+###
+DELETE  http://localhost:5500/api/room/637872e07dfe93924ccfe689 HTTP/1.1
+Content-Type: application/json
+
+
+//User related calls
+###
+POST http://localhost:5500/api/send-otp HTTP/1.1
+Content-Type: application/json
+
+{
+  "phone": "0000000002"
+}
+
+###
+POST http://localhost:5500/api/verify-otp HTTP/1.1
+Content-Type: application/json
+
+{
+  "otp": "5446",
+  "hash": "37eeef7576719e4f6e72bf5111364dd720c2154411c8e54ec88ebb12bcf374ae.1668877260141",
+  "phone": "0000000002"
+}
+
+###
+GET http://localhost:5500/api/user/6378bdb1200cb1362837c1ab HTTP/1.1
+Content-Type: application/json
+
+###
+PUT http://localhost:5500/api/follow HTTP/1.1
+Content-Type: application/json
+
+{
+  "followingId": "6375429c3ac4f02d5c9e300a",
+  "userId": "6378bcef200cb1362837c1a6"
+}
+
+###
+PUT http://localhost:5500/api/unfollow HTTP/1.1
+Content-Type: application/json
+
+{
+  "unFollowingId": "6378bdb1200cb1362837c1ab",
+  "userId": "6375429c3ac4f02d5c9e300a"
+}
+
+###
+PUT http://localhost:5500/api/user/update HTTP/1.1
+Content-Type: application/json
+
+{
+  "userData": {
+    "activated": true,
+    "occupation": "desginer",
+    "location": "Manhatten, New York",
+    "bio": "I'm a designer"
+  },
+  "userId": "6378bdb1200cb1362837c1ab"
+}
+
+###
+# test user 3: 6378bdb1200cb1362837c1ab
+# test user 2: 6378bcef200cb1362837c1a6
+# test user 1: 6378bb3c8aeeee7228d81fee
+# mandy lawrence: 6375429c3ac4f02d5c9e300a

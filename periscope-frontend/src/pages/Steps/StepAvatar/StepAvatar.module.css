@@ -1,0 +1,35 @@
+.avatarSection {
+  display: flex;
+  margin-bottom: 1.2em;
+  justify-content: center;
+}
+
+.avatarWrap {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 100%;
+}
+
+.uploadIcon{
+  height: 90%;
+}
+
+.imgUploadButton{
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0 , 0, 0, 50%);
+  cursor: pointer;
+}
+
+.avatarInput {
+  display: none;
+}

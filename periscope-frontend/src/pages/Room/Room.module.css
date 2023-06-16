@@ -1,0 +1,145 @@
+.client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.userHead {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #5453e0;
+    position: relative;
+}
+
+.userHead + h4 {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.userAvatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.goBack {
+    display: flex;
+    align-items: center;
+    background: none;
+    outline: none;
+    margin-top: 2rem;
+}
+
+.goBack span {
+    margin-left: 1rem;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+}
+
+.goBack span::after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 60%;
+    height: 4px;
+    background: #0077ff;
+    border-radius: 10px;
+}
+
+.clientsWrap {
+    background: #1d1d1d;
+    margin-top: 4rem;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    min-height: calc(100vh - 205px);
+    padding: 2rem;
+}
+
+.topic {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.clientsList {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.actionBtn {
+    background: #262626;
+    outline: none;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.actionBtn:hover {
+    background: #333333;
+}
+
+.actionBtn span {
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+/* New Class */
+.micBtn{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.2em;
+  right: 0.1em;
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.leave_btn {
+  padding: 5px 10px;
+  background-color: var(--primary);
+  border-radius: 8px;
+  width: auto;
+}
+
+.users{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatarWrap{
+  position: relative;
+  width: fit-content;
+}
+
+.loadingWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
